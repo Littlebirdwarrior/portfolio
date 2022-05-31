@@ -1,0 +1,107 @@
+
+/* socials*/
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper .icon-container {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(26, 26, 26, 0.12);
+    color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    font-size: 27px;
+    text-decoration: none;
+    opacity: 0.99;
+    overflow: hidden;
+}
+
+.wrapper .icon-container::before {
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    z-index: 1;
+}
+
+.wrapper .icon-container .icon {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    z-index: 2;
+}
+
+.wrapper .icon-container.instagram {
+    color: #de127e;
+}
+
+.wrapper .icon-container.twitter {
+    color: #5da9dd;
+}
+
+.wrapper .icon-container.gmail {
+    color: #fe0108;
+}
+
+.wrapper .icon-container.github {
+    color: #1b1f23;
+}
+
+.wrapper .icon-container.linkedin {
+    color: #0077b5;
+}
+
+.wrapper .icon-container:hover .icon {
+    color: #ffffff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.wrapper .icon-container:hover::before {
+    top: -10%;
+    left: -10%;
+}
+
+.wrapper .icon-container.instagram:hover::before {
+    background-color: #de127e;
+}
+
+.wrapper .icon-container.twitter:hover::before {
+    background-color: #5da9dd;
+}
+
+.wrapper .icon-container.gmail:hover::before {
+    background-color: #fe0108;
+}
+
+.wrapper .icon-container.github:hover::before {
+    background-color: #1b1f23;
+}
+
+.wrapper .icon-container.linkedin:hover::before {
+    background-color: #0077b5;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper .icon-container {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+        font-size: 18px;
+    }
+}
