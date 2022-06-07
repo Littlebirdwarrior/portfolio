@@ -1,0 +1,108 @@
+/* bootstrap reset*/
+
+/*colors*/
+:root {
+    --primary: rgba(250, 33, 115, 1.00);
+    --secondary:rgba(94, 165, 244, 1.00);
+    --success: rgba(182, 147, 225, 1.00);
+    --danger: rgba(243, 83, 94, 1.00);
+    --warning: rgb(248, 192, 91);
+    --info: rgb(89, 222, 241);
+    --light: rgba(192, 202, 232, 1.00);
+    --blue : #1E3A5F;
+    --dark: rgba(15, 35, 61, 1.00);
+    --muted: rgba(144, 146, 166, 0.8);
+    --white: #ffffff;
+}
+
+/* text colors*/
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-info {
+    color: var(--info);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-muted {
+    color: var(--muted);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+/*text background*/
+
+.bg-primary {
+    background: var(--primary) !important;
+}
+.bg-secondary {
+    background: var(--secondary) !important;
+}
+.bg-success {
+    background: var(--success) !important;
+}
+.bg-danger {
+    background: var(--danger) !important;
+}
+.bg-warning {
+    background: var(--warning) !important;
+}
+.bg-info {
+    background: var(--info) !important;
+}
+.bg-light {
+    background: var(--light) !important;
+}
+.bg-dark, .forced-bg-dark {
+    background: var(--dark) !important;
+}
+.bg-white {
+    background: var(--white) !important;
+}
+
+/*button*/
+
+.btn-primary {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-link, .page-link {
+    color: var(--primary) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--white)
+}
+
+.card {
+    background-color:  var(--blue) !important;
+    border: none !important;
+    box-shadow: 2px 5px 15px rgba(36, 40, 75, 0.38);
+}

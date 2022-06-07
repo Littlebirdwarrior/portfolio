@@ -1,0 +1,192 @@
+
+
+/************HOME****************/
+
+main {
+    background: linear-gradient(#1E3A5F, #5A467A, #CD8A96);
+}
+
+/*-------------header section*/
+
+.header {
+    z-index: 10;
+}
+
+/*-------------Hero section*/
+
+.hero {
+    width: auto;
+    height:95vh;
+}
+
+.hero .hero-content {
+    padding-top: 30vh;
+    margin: 0 auto;
+}
+
+.hero .hero-content h1{
+    font-size: 95px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 5px 5px 100px #1E3A5F;
+}
+
+.hero .hero-content h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 8.2rem;
+    padding-left: .4rem;
+}
+
+.hero .hero-content h2 span{
+    display: block;
+    font-size: 30px;
+    font-family: 'B612 Mono', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+
+.pink-point:after{
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 35px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 1.1rem;
+    left: -2.5rem;
+}
+
+.txt-bg-clip {
+    background: linear-gradient(to left, #C2DDFF, #59A2FF) no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.txt-bg-clip-2 {
+    background: linear-gradient(to left, #A5A2D2, #C2DDFF) no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.txt-bg-clip-3 {
+    background: linear-gradient(to left, #59A2FF, #A5A2D2) no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+@media (max-width: 1358px) {
+
+    .hero .hero-content h1{
+        font-size: 50px;
+    }
+
+    .hero .hero-content h2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .hero .hero-content h2 span{
+        font-size: 26px;
+        line-height: 3.5rem;
+    }
+
+    .pink-point:after{
+        display: none;
+    }
+}
+
+@media  (max-width: 560px) {
+    .hero .hero-content {
+        position: relative;
+        padding-top: 10vh;
+        margin: 0 auto;
+        padding-left: 2rem;
+    }
+
+
+
+}
+
+.up {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 92vh;
+    left: 48%;
+    cursor: pointer;
+
+}
+
+.up .up_toogle{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 30px;
+    position: relative;
+}
+
+/* UP Toogle -- lien vers le bas*/
+
+.up:hover .up_toogle {
+    -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation-delay: 5ms;
+}
+
+.up:hover .up_toogle:before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: var(--white);
+    opacity: 0.5;
+    border-radius: 26px;
+    position: absolute;
+    top: -10px;
+    left:3px;
+    -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation-delay: 5ms;
+}
+
+.up:hover .up_toogle:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    opacity: 0.3;
+    border-radius: 26px;
+    position: absolute;
+    top: -20px;
+    left:5px;
+    -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    animation-delay: 5ms;
+
+}
+
+
+
+/*---------------------------------------------------------------*/
+
+
+
+
+
+
+
+
