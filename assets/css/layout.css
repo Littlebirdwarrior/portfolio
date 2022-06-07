@@ -11,7 +11,7 @@ main {
 .header {
     z-index: 10;
 }
-
+/*---------------------------------------------------------------*/
 /*-------------Hero section*/
 
 .hero {
@@ -37,6 +37,7 @@ main {
     justify-content: space-between;
     padding-right: 8.2rem;
     padding-left: .4rem;
+    max-width: 1033px;
 }
 
 .hero .hero-content h2 span{
@@ -87,6 +88,7 @@ main {
 @media (max-width: 1358px) {
 
     .hero .hero-content h1{
+        padding-top: 15vh;
         font-size: 50px;
     }
 
@@ -182,7 +184,7 @@ main {
 
 
 /*---------------------------------------------------------------*/
-
+/*-------------About section*/
 
 
 
