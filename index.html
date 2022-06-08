@@ -108,6 +108,26 @@
 
 </header>
 <main>
+    <div class="stars_section"></div>
+    <section class="socials_bar" id="social_bar">
+        <div class="socials py-2">
+            <div class="wrapper">
+                <a href="#" class="icon-container instagram">
+                    <i class="icon fab fa-instagram"></i>
+                </a>
+                <a href="#" class="icon-container linkedin">
+                    <i class="icon fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="icon-container gmail">
+                    <i class="icon fa-solid fa-envelope"></i>
+                </a>
+                <a href="#" class="icon-container github">
+                    <i class="icon fab fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
     <section id="home_hero" class="hero">
         <div class="hero-content container col-md-8">
             <h1>Camille Dorland</h1>
@@ -118,96 +138,116 @@
             </h2>
         </div>
 
-        <a class="up" href="#home_hero">
+
+        <a class="up" href="#home_about">
            <div class="up_toogle"></div>
         </a>
-
     </section>
+    <div class="">
+        <ul class="waves-wrapper" aria-hidden="true">
+            <li>wave 1</li>
+            <li>wave 2</li>
+            <li>wave 3</li>
+            <li>wave 4</li>
+        </ul>
+
+    </div>
 
     <section id="home_about" class="about">
-        <div class="container py-3">
-            <h2 class="py-3">
+        <div class="container pt-3">
+            <h2 class="h2-style py-3">
                 À propos
             </h2>
-            <div class="row">
+            <div class="d-flex flex-column flex-lg-row">
                 <!--------->
-                <div class="home_about_profile col col-lg-6">
+                <div class="home_about_profile">
                     <!--------->
-                    <div class="d-flex row justify-content-between">
-                        <div class="col col-lg-3 d-flex flex-column">
-                            <figure class="figure">
-                                <img src="http://placekitten.com/150/150" class="figure-img img-fluid rounded" alt="...">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <div class="d-flex flex-column align-items-center m-auto">
+                            <figure class="portrait">
+                                <img src="http://placekitten.com/300/300" class="figure-img img-fluid rounded" alt="...">
                             </figure>
-                            <button type="button" class="btn btn-primary btn-small">Link</button>
+                            <button type="button" class="btn btn-primary">Mon C.V</button>
                         </div>
-                        <div class="col col-lg-9" style="min-width: 300px">
-                            <p class="pl-lg-3">
-                                Hello 👋,<br>
-                            Je suis Camille et je suis web designer et développeuse frontend. 💻 <br>
+                        <div class=" min-w-290">
+                            <p class="">
+                                Hello 👋,<br><br>
+                            Je suis Camille et je suis web designer et développeuse frontend. 💻 <br><br>
                             Mes compétences et mon expérience me permettrons de vous accompagner dans votre projet web,
                             du design de maquette à la mise en ligne, en passant par l’optimisation S.E.O. 🚀
                             </p>
 
                         </div>
                     </div>
+
                 </div>
                 <!--------->
-                <div class="home_about_skills col col-lg-6">
+                <div class="home_about_skills col col-lg-4">
                     <!--------->
-                    <div class="row py-2">
-                        <div class="col col-md-6 col-lg-4">
-                        <h3>html</h3>
+                    <div class="row px-2 py-3">
+                        <div class="skills col-4">
+                        <h3>HTML</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress html"></div>
+                            </div>
 
                         </div>
-                        <div class="col col-md-6 col-lg-4">
-                            <h3>html</h3>
-                        </div>
-                        <div class="col col-md-6 col-lg-4">
-                            <h3>html</h3>
-                        </div>
-                        <div class="col col-md-6 col-lg-4">
-                            <h3>html</h3>
+                        <div class="skills col-4">
+                            <h3>CSS/Scss</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress css"></div>
+                            </div>
 
                         </div>
-                        <div class="col col-md-6 col-lg-4">
-                            <h3>html</h3>
+                        <div class="skills col-4">
+                            <h3>JavaScript</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress javascript"></div>
+                            </div>
 
                         </div>
-                        <div class="col col-md-6 col-lg-4">
-                            <h3>html</h3>
+                        <div class="skills col-4">
+                            <h3>React/Vue.js</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress react"></div>
+                            </div>
+
                         </div>
+                        <div class="skills col-4">
+                            <h3>Wordpress</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress wordpress"></div>
+                            </div>
+
+                        </div>
+                        <div class="skills col-4">
+                            <h3>UX-UI</h3>
+                            <div class="progress-circle">
+                                <div class="base"></div>
+                                <div class="progress design"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="socials ">
-                <div class="wrapper">
-                    <a href="#" class="icon-container instagram">
-                        <i class="icon fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="icon-container linkedin">
-                        <i class="icon fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="icon-container gmail">
-                        <i class="icon fa-solid fa-envelope"></i>
-                    </a>
-                    <a href="#" class="icon-container github">
-                        <i class="icon fab fa-github"></i>
-                    </a>
 
-                </div>
             </div>
-
         </div>
 
     </section>
 
     <section id="home_projets" class="projets">
         <article class="container">
-            <h2>Mes projets</h2>
-            <div class="py-3">
+            <h2 class="h2-style py-3">Mes projets</h2>
+            <div class="">
                 <!---------->
                 <div class="row">
-                    <div class="col py-2">
+                    <div class="col col-lg-4 my-3">
                         <!------ pour redimensionner la carte : style="width: 18rem;"----->
                         <div class="card">
                             <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
@@ -219,7 +259,8 @@
                         </div>
                     </div>
                     <!---------->
-                    <div class="col py-2">
+                    <div class="col col-lg-4 my-3">
+                        <!------ pour redimensionner la carte : style="width: 18rem;"----->
                         <div class="card">
                             <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -230,7 +271,8 @@
                         </div>
                     </div>
                     <!---------->
-                    <div class="col py-2">
+                    <div class="col col-lg-4 my-3">
+                        <!------ pour redimensionner la carte : style="width: 18rem;"----->
                         <div class="card">
                             <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -241,41 +283,151 @@
                         </div>
                     </div>
                     <!---------->
+                    <div class="col col-lg-4 my-3">
+                        <!------ pour redimensionner la carte : style="width: 18rem;"----->
+                        <div class="card">
+                            <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------->
+                    <div class="col col-lg-4 my-3">
+                        <!------ pour redimensionner la carte : style="width: 18rem;"----->
+                        <div class="card">
+                            <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------->
+                    <div class="col col-lg-4 my-3">
+                        <!------ pour redimensionner la carte : style="width: 18rem;"----->
+                        <div class="card">
+                            <img src="http://placekitten.com/200/150" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------->
+
+
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-link">Primary</button>
-                </div>
+<!--                <div class="d-flex justify-content-center">-->
+<!--                    <button type="button" class="btn btn-primary">Voir plus +</button>-->
+<!--                </div>-->
             </div>
         </article>
 
     </section>
 
-    <section id="home_pagination" class="about">
-        <div class="container d-flex justify-content-center">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            page précédante
-                        </a>
-                    </li>
+    <div class="decorative">
 
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            page suivante
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    </div>
 
+<!--    <section id="home_pagination" class="pagination">-->
+<!--        <div class="container d-flex justify-content-center">-->
+<!--            <nav aria-label="Page navigation example">-->
+<!--                <ul class="pagination">-->
+<!--                    <li class="page-item">-->
+<!--                        <a class="page-link" href="#" aria-label="Previous">-->
+<!--                            <span aria-hidden="true">&laquo;</span>-->
+<!--                            page précédante-->
+<!--                        </a>-->
+<!--                    </li>-->
+
+<!--                    <li class="page-item">-->
+<!--                        <a class="page-link" href="#" aria-label="Next">-->
+<!--                            page suivante-->
+<!--                            <span aria-hidden="true">&raquo;</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--        </div>-->
+
+<!--    </section>-->
+    <section>
+        <article class="container pb-4">
+            <div class="col col-md-6 m-auto">
+                <h2 class="h2-style py-3">Contact</h2>
+                <form>
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlInput1">Votre nom</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group pb-3">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group pb-3">
+                        <label for="formControlMessage">Example textarea</label>
+                        <textarea class="form-control" id="formControlMessage" rows="10"></textarea>
+                    </div>
+                    <button class="btn btn-primary my-3 text-end" type="submit">Submit form</button>
+                </form>
+
+            </div>
+        </article>
     </section>
 
 
 </main>
-<footer id="home_footer" class="footer">
+<footer id="home_footer" class="footer forced-bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark forced-bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Camille Dorland</a>
+
+                <div class="d-flex flex-row w-100 justify-content-start justify-content-lg-end">
+                    <div class="d-flex flex-column flex-lg-row">
+                        <ul class="navbar-nav d-flex align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Me contacter</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-flex flex-row align-items-center">
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </nav>
 
 </footer>
 

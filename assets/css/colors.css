@@ -15,6 +15,14 @@
     --white: #ffffff;
 }
 
+main {
+    background: linear-gradient(#1E3A5F 50%, #5A467A, #CD8A96);
+}
+
+.about {
+    background: linear-gradient(#385691 50%, rgba(48, 160, 253, 0.45), rgba(105, 177, 252, 0.6));
+}
+
 /* text colors*/
 .text-primary {
     color: var(--primary);
@@ -89,20 +97,33 @@
 /*button*/
 
 .btn-primary {
+    color: var(--white);
     background: var(--primary) !important;
     border-color: var(--primary) !important;
 }
 
-.btn-link, .page-link {
+.btn-primary:hover, .btn-primary:focus {
     color: var(--primary) !important;
+    background: var(--white) !important;
+    border-color: transparent !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+.btn-link, .page-link {
+    color: var(--primary) !important;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label  {
     color: var(--white)
 }
 
 .card {
-    background-color:  var(--blue) !important;
+    background-color:  var(--dark) !important;
     border: none !important;
     box-shadow: 2px 5px 15px rgba(36, 40, 75, 0.38);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.46) !important;
 }

@@ -70,19 +70,23 @@
 /*Stars*/
 
 .stars_section {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 b{
     border-radius:50%;
     pointer-events:none;
-    z-index: 0;
     position:absolute;
     background: linear-gradient(#cdb6ea, #F1f1f1);
-    animation: stars 2s linear 400;
+    animation: stars 4s linear 400;
 }
 
 .stars {
-    animation: stars 2s linear infinite;
+    animation: stars 4s linear infinite;
 }
 
 @keyframes stars{

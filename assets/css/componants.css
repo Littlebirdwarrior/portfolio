@@ -1,6 +1,93 @@
 
-/*les buttons*/
 
+
+/*Button*/
 .btn {
-    width: 150px;
+    width: fit-content;
+    border-radius: 35px !important;
 }
+
+.btn:hover {
+    box-shadow: 2px 5px 50px rgba(225, 239, 239, 0.34);
+}
+
+.progress-circle {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+/* progress circle*/
+
+.progress-circle .base{
+    position: relative;             /* pour servir de référent */
+    box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+    font-size: 5em;                 /* pour définir les dimensions */
+    width: 1em;                     /* fixe la largeur */
+    height: 1em;                    /* fixe la hauteur */
+    border-radius: 50%;             /* rendu aspect circulaire */
+    background: linear-gradient(to left, rgba(40, 40, 40, 0.40), rgba(159, 158, 158, 0.24));
+    opacity: .8;
+    box-shadow: 10px 5px 50px rgba(183, 212, 239, 0.36);
+}
+/* Set the sizes of the elements that make up the progress bar */
+
+.progress-circle .progress{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;/* pour servir de référent */
+    box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+    font-size: 5em;                 /* pour définir les dimensions */
+    width: 1em;                     /* fixe la largeur */
+    height: 1em;                    /* fixe la hauteur */
+    border-radius: 50%;             /* rendu aspect circulaire */
+;}
+
+.html {
+    background:linear-gradient(#fdc46f 15%, #fda62f,#fe6a01, #c05207);
+    clip-path: polygon(37% 43%, 82% 52%, 100% 46%, 100% 100%, 0 100%, 0 36%, 26% 39%);
+}
+
+.css {
+    background:linear-gradient(#83faf0 20%, #44cee0, #12889d, #056c7e);
+    clip-path:  polygon(55% 18%, 80% 20%, 100% 30%, 100% 100%, 0 100%, 0 26%, 25% 24%);
+}
+
+.javascript {
+    background:linear-gradient(#f6e08b 40%, #fcbb3d, #cc8c05, #865f06);
+    clip-path: polygon(52% 55%, 80% 56%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 23% 49%);
+}
+
+.react {
+    background:linear-gradient(#db7ff8 40%, #b927e7, #8e0db7, #6c058c);
+    clip-path: polygon(56% 55%, 81% 57%, 100% 53%, 100% 100%, 0 100%, 0 67%, 28% 56%);
+}
+
+.wordpress {
+    background:linear-gradient(#83c2fa 40%, #4497e0, #125a9d, #05437e);
+    clip-path: polygon(60% 65%, 81% 61%, 100% 53%, 100% 100%, 0 100%, 0 56%, 31% 59%);
+}
+
+.design {
+    background:linear-gradient(#f87fc0, #e7277d, #910b44, #64042f);
+    clip-path: polygon(43% 20%, 74% 28%, 98% 29%, 100% 100%, 0 100%, 0 29%, 19% 21%);
+}
+
+/* card*/
+
+.card {
+    width: 350px;
+}
+
+@media  (max-width: 1200px) {
+    .card {
+        width: 290px;
+        margin: 0 auto;
+    }
+
+}
+
+/*form*/
+

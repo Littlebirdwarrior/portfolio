@@ -2,8 +2,14 @@
 
 /************HOME****************/
 
-main {
-    background: linear-gradient(#1E3A5F, #5A467A, #CD8A96);
+.about , .projets {
+    padding: 5rem
+}
+
+@media (max-width: 560px) {
+    .about , .projets {
+        padding: 5rem 1rem;
+    }
 }
 
 /*-------------header section*/
@@ -88,7 +94,7 @@ main {
 @media (max-width: 1358px) {
 
     .hero .hero-content h1{
-        padding-top: 15vh;
+        padding-top: 0;
         font-size: 50px;
     }
 
@@ -129,6 +135,7 @@ main {
     top: 92vh;
     left: 48%;
     cursor: pointer;
+    z-index: 10;
 
 }
 
@@ -186,9 +193,41 @@ main {
 /*---------------------------------------------------------------*/
 /*-------------About section*/
 
+.h2-style{
+    font-size: 2.5rem !important;
+    font-weight: 900 !important;
+    letter-spacing: .1rem;
+    padding-left: 1rem;
+}
+@media (max-width: 1070px) {
+    .h2-style{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+.min-w-290 {
+    min-width: 290px;
+}
 
+.home_about_profile>div, .home_about_profile>div>div {
+    width: fit-content;
+}
 
+.home_about_profile p {
+    font-size: 1.2rem;
+    padding: 0 4rem;
+}
 
+.portrait {
+    width: 210px;
+    height: 210px;
+    border-radius: 50% !important;
+    background-color: #fda62f;
+    overflow: hidden;
+}
 
-
-
+.skills h3{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: .2rem;
+}
