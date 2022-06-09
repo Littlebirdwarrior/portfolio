@@ -114,6 +114,14 @@ main {
     border-color: transparent !important;
 }
 
+.btn:hover {
+    box-shadow: 2px 5px 50px rgba(225, 239, 239, 0.34);
+}
+
+.wrapper .icon-container:hover {
+    box-shadow: 2px 2px 20px rgba(225, 239, 239, 0.25);
+}
+
 h1, h2, h3, h4, h5, h6, p, a, label, .form-control  {
     color: var(--white) !important;
 }
@@ -132,3 +140,5 @@ h1, h2, h3, h4, h5, h6, p, a, label, .form-control  {
 .form-control::placeholder {
     color: rgba(176, 172, 172, 0.74) !important;;
 }
+
+

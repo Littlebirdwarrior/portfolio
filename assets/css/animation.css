@@ -25,6 +25,59 @@
  * ----------------------------------------
  */
 
+/*Hover animation*/
+
+.hover-primary {
+    position: relative;
+}
+
+
+.hover-primary:hover::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 5px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 2.3rem;
+    left: .5rem;
+    -webkit-animation:  scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-left {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        opacity: 1;
+    }
+}
+@keyframes scale-in-left {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        opacity: 1;
+    }
+}
+
 /*Up and down button*/
 
 .slide-out-bottom:hover {

@@ -7,10 +7,6 @@
     border-radius: 35px !important;
 }
 
-.btn:hover {
-    box-shadow: 2px 5px 50px rgba(225, 239, 239, 0.34);
-}
-
 /* progress circle*/
 
 .progress-circle {
