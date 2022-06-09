@@ -3,7 +3,7 @@
 /************HOME****************/
 
 .about , .projets {
-    padding: 5rem
+    padding: 5rem 5rem 5rem 7rem;
 }
 
 @media (max-width: 560px) {
@@ -216,6 +216,14 @@
 .home_about_profile p {
     font-size: 1.2rem;
     padding: 0 4rem;
+}
+
+@media (max-width: 693px) {
+    .home_about_profile p {
+        font-size: 1.5rem;
+        padding: 2rem 1rem;
+    }
+    
 }
 
 .portrait {
