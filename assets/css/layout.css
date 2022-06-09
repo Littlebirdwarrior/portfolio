@@ -239,3 +239,11 @@
     text-align: center;
     padding-bottom: .2rem;
 }
+
+@media (max-width: 460px) {
+    .skills h3{
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: .2rem;
+    }
+}
