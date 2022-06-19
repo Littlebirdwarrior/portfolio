@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --svg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 128'%3E%3Cpath d='M0 48c237-62 403-63 640 0 237 62 403 62 640 0v80H0V48z'/%3E%3C/svg%3E");
     --waves-width: 1280px;
@@ -27,11 +34,23 @@
     height: var(--waves-height);
     color: transparent;
     -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     background-size: var(--waves-width) var(--waves-height);
     background-repeat: repeat-x;
+    -webkit-animation: animateWave var(--anim-duration) linear infinite;
     animation: animateWave var(--anim-duration) linear infinite;
+    -webkit-filter: var(--filter-black-to-blue-siw);
     filter: var(--filter-black-to-blue-siw);
+}
+@-webkit-keyframes animateWave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: var(--waves-width);
+    }
 }
 @keyframes animateWave {
     0% {
@@ -61,7 +80,8 @@
 }
 .waves-wrapper li:nth-child(n+3) {
     background-size: calc(var(--waves-width) / 2);
+    background-image: var(--svg-wave), -webkit-gradient(linear, left bottom, left top, color-stop(50%, black), color-stop(50%, transparent));
+    background-image: var(--svg-wave), -o-linear-gradient(bottom, black 50%, transparent 50%);
     background-image: var(--svg-wave), linear-gradient(to top, black 50%, transparent 50%);
 }
-
 

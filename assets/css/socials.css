@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* les socials*/
 
 .socials_bar {
@@ -6,6 +13,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     height: 0; /*permet de ne pas rajouter d'espace*/
 }
@@ -17,7 +26,12 @@
 }
 
 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -25,11 +39,18 @@
     position: relative;
     width: 45px;
     height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 10px;
     border-radius: 50%;
+    -webkit-box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
     box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
     cursor: pointer;
     font-size: 27px;
@@ -46,43 +67,64 @@
     top: 90%;
     left: -110%;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
     transition: all 0.35s;
+    -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -o-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
     z-index: 1;
 }
 
 .wrapper .icon-container .icon {
     -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
     transform: scale(0.8);
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
     transition: all 0.35s;
+    -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    -o-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
     z-index: 2;
     color: white;
 }
 
 .wrapper .icon-container.instagram {
+    background: -webkit-gradient(linear, left top, left bottom, from(#de127e), to(#fda62f));
+    background: -o-linear-gradient(#de127e, #fda62f);
     background: linear-gradient(#de127e, #fda62f);
 }
 
 .wrapper .icon-container.twitter {
+    background: -webkit-gradient(linear, left top, left bottom, from(#5da9dd), to(#2fa7fd));
+    background: -o-linear-gradient(#5da9dd, #2fa7fd);
     background: linear-gradient(#5da9dd, #2fa7fd);
 }
 
 .wrapper .icon-container.gmail {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1492d), to(#c72b10));
+    background: -o-linear-gradient(#f1492d, #c72b10);
     background: linear-gradient(#f1492d, #c72b10);
 }
 
 .wrapper .icon-container.github {
+    background: -webkit-gradient(linear, left top, left bottom, from(#31303a), to(#1b1f23));
+    background: -o-linear-gradient(#31303a, #1b1f23);
     background: linear-gradient(#31303a, #1b1f23);
 }
 
 .wrapper .icon-container.linkedin {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0077b5), to(#004b6e));
+    background: -o-linear-gradient(#0077b5, #004b6e);
     background: linear-gradient(#0077b5, #004b6e);
 }
 
 .wrapper .icon-container:hover .icon {
     -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 

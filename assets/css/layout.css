@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 /************HOME****************/
@@ -38,8 +45,13 @@
 }
 
 .hero .hero-content h2{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-right: 8.2rem;
     padding-left: .4rem;
@@ -67,6 +79,8 @@
 }
 
 .txt-bg-clip {
+    background: -webkit-gradient(linear, right top, left top, from(#C2DDFF), to(#59A2FF)) no-repeat;
+    background: -o-linear-gradient(right, #C2DDFF, #59A2FF) no-repeat;
     background: linear-gradient(to left, #C2DDFF, #59A2FF) no-repeat;
     background-size: cover;
     background-clip: text;
@@ -75,6 +89,8 @@
 }
 
 .txt-bg-clip-2 {
+    background: -webkit-gradient(linear, right top, left top, from(#A5A2D2), to(#C2DDFF)) no-repeat;
+    background: -o-linear-gradient(right, #A5A2D2, #C2DDFF) no-repeat;
     background: linear-gradient(to left, #A5A2D2, #C2DDFF) no-repeat;
     background-size: cover;
     background-clip: text;
@@ -83,6 +99,8 @@
 }
 
 .txt-bg-clip-3 {
+    background: -webkit-gradient(linear, right top, left top, from(#59A2FF), to(#A5A2D2)) no-repeat;
+    background: -o-linear-gradient(right, #59A2FF, #A5A2D2) no-repeat;
     background: linear-gradient(to left, #59A2FF, #A5A2D2) no-repeat;
     background-size: cover;
     background-clip: text;
@@ -99,7 +117,12 @@
     }
 
     .hero .hero-content h2{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
@@ -152,6 +175,7 @@
 .up:hover .up_toogle {
     -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
     animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    -webkit-animation-delay: 5ms;
     animation-delay: 5ms;
 }
 
@@ -168,6 +192,7 @@
     left:3px;
     -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
     animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    -webkit-animation-delay: 5ms;
     animation-delay: 5ms;
 }
 
@@ -184,6 +209,7 @@
     left:5px;
     -webkit-animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
     animation: slide-out-bottom 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2 ;
+    -webkit-animation-delay: 5ms;
     animation-delay: 5ms;
 
 }
@@ -210,6 +236,8 @@
 }
 
 .home_about_profile>div, .home_about_profile>div>div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -223,7 +251,7 @@
         font-size: 1.5rem;
         padding: 2rem 1rem;
     }
-    
+
 }
 
 .portrait {

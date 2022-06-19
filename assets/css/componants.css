@@ -1,8 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 
 /*Button*/
 .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-radius: 35px !important;
 }
@@ -11,6 +20,8 @@
 
 .progress-circle {
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     padding-bottom: 2rem;
@@ -18,13 +29,17 @@
 
 .progress-circle .base{
     position: relative;             /* pour servir de référent */
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
     font-size: 5em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
+    background: -webkit-gradient(linear, right top, left top, from(rgba(40, 40, 40, 0.40)), to(rgba(159, 158, 158, 0.24)));
+    background: -o-linear-gradient(right, rgba(40, 40, 40, 0.40), rgba(159, 158, 158, 0.24));
     background: linear-gradient(to left, rgba(40, 40, 40, 0.40), rgba(159, 158, 158, 0.24));
     opacity: .8;
+    -webkit-box-shadow: 10px 5px 50px rgba(183, 212, 239, 0.36);
     box-shadow: 10px 5px 50px rgba(183, 212, 239, 0.36);
 }
 /* Set the sizes of the elements that make up the progress bar */
@@ -34,6 +49,7 @@
     top:0;
     left: 0;
     z-index: 1;/* pour servir de référent */
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
     font-size: 5em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
@@ -42,32 +58,50 @@
 ;}
 
 .html {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(15%, #fdc46f), color-stop(#fda62f),color-stop(#fe6a01), to(#c05207));
+    background:-o-linear-gradient(#fdc46f 15%, #fda62f,#fe6a01, #c05207);
     background:linear-gradient(#fdc46f 15%, #fda62f,#fe6a01, #c05207);
+    -webkit-clip-path: polygon(37% 43%, 82% 52%, 100% 46%, 100% 100%, 0 100%, 0 36%, 26% 39%);
     clip-path: polygon(37% 43%, 82% 52%, 100% 46%, 100% 100%, 0 100%, 0 36%, 26% 39%);
 }
 
 .css {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(20%, #83faf0), color-stop(#44cee0), color-stop(#12889d), to(#056c7e));
+    background:-o-linear-gradient(#83faf0 20%, #44cee0, #12889d, #056c7e);
     background:linear-gradient(#83faf0 20%, #44cee0, #12889d, #056c7e);
+    -webkit-clip-path:  polygon(55% 18%, 80% 20%, 100% 30%, 100% 100%, 0 100%, 0 26%, 25% 24%);
     clip-path:  polygon(55% 18%, 80% 20%, 100% 30%, 100% 100%, 0 100%, 0 26%, 25% 24%);
 }
 
 .javascript {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(40%, #f6e08b), color-stop(#fcbb3d), color-stop(#cc8c05), to(#865f06));
+    background:-o-linear-gradient(#f6e08b 40%, #fcbb3d, #cc8c05, #865f06);
     background:linear-gradient(#f6e08b 40%, #fcbb3d, #cc8c05, #865f06);
+    -webkit-clip-path: polygon(52% 55%, 80% 56%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 23% 49%);
     clip-path: polygon(52% 55%, 80% 56%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 23% 49%);
 }
 
 .react {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(40%, #db7ff8), color-stop(#b927e7), color-stop(#8e0db7), to(#6c058c));
+    background:-o-linear-gradient(#db7ff8 40%, #b927e7, #8e0db7, #6c058c);
     background:linear-gradient(#db7ff8 40%, #b927e7, #8e0db7, #6c058c);
+    -webkit-clip-path: polygon(56% 55%, 81% 57%, 100% 53%, 100% 100%, 0 100%, 0 67%, 28% 56%);
     clip-path: polygon(56% 55%, 81% 57%, 100% 53%, 100% 100%, 0 100%, 0 67%, 28% 56%);
 }
 
 .wordpress {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(40%, #83c2fa), color-stop(#4497e0), color-stop(#125a9d), to(#05437e));
+    background:-o-linear-gradient(#83c2fa 40%, #4497e0, #125a9d, #05437e);
     background:linear-gradient(#83c2fa 40%, #4497e0, #125a9d, #05437e);
+    -webkit-clip-path: polygon(60% 65%, 81% 61%, 100% 53%, 100% 100%, 0 100%, 0 56%, 31% 59%);
     clip-path: polygon(60% 65%, 81% 61%, 100% 53%, 100% 100%, 0 100%, 0 56%, 31% 59%);
 }
 
 .design {
+    background:-webkit-gradient(linear, left top, left bottom, from(#f87fc0), color-stop(#e7277d), color-stop(#910b44), to(#64042f));
+    background:-o-linear-gradient(#f87fc0, #e7277d, #910b44, #64042f);
     background:linear-gradient(#f87fc0, #e7277d, #910b44, #64042f);
+    -webkit-clip-path: polygon(43% 20%, 74% 28%, 98% 29%, 100% 100%, 0 100%, 0 29%, 19% 21%);
     clip-path: polygon(43% 20%, 74% 28%, 98% 29%, 100% 100%, 0 100%, 0 29%, 19% 21%);
 }
 
@@ -100,6 +134,7 @@
 .card .card-img-top{
     width: 100%;
     height: 200px;
+    -o-object-fit: cover;
     object-fit: cover;
 
 }

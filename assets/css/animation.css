@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*animation css*/
 
 /* ----------------------------------------------
@@ -134,16 +141,21 @@ b{
     border-radius:50%;
     pointer-events:none;
     position:absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cdb6ea), to(#F1f1f1));
+    background: -o-linear-gradient(#cdb6ea, #F1f1f1);
     background: linear-gradient(#cdb6ea, #F1f1f1);
+    -webkit-animation: stars 4s linear 400;
     animation: stars 4s linear 400;
 }
 
 .stars {
+    -webkit-animation: stars 4s linear infinite;
     animation: stars 4s linear infinite;
 }
 
-@keyframes stars{
+@-webkit-keyframes stars{
     0%{
+        -webkit-transform:scale(0) translateX(0) rotate(0deg);
         transform:scale(0) translateX(0) rotate(0deg);
         opacity:0;
     }
@@ -154,6 +166,26 @@ b{
         opacity:0.9;
     }
     100%{
+        -webkit-transform:scale(1) translateX(-400%) rotate(360deg);
+        transform:scale(1) translateX(-400%) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes stars{
+    0%{
+        -webkit-transform:scale(0) translateX(0) rotate(0deg);
+        transform:scale(0) translateX(0) rotate(0deg);
+        opacity:0;
+    }
+    10%{
+        opacity:0.8;
+    }
+    90%{
+        opacity:0.9;
+    }
+    100%{
+        -webkit-transform:scale(1) translateX(-400%) rotate(360deg);
         transform:scale(1) translateX(-400%) rotate(360deg);
         opacity:0;
     }
