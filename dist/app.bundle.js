@@ -1,0 +1,1 @@
+setInterval((function(){const t=document.querySelector(".stars_section"),e=document.createElement("b");let n=-10*Math.random();e.style.width=8+n+"px",e.style.height=8+n+"px",e.style.top=Math.random()*innerHeight+"px",e.style.left=Math.random()*innerWidth+"px",t.appendChild(e)}),2e3);
