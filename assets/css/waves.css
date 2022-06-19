@@ -65,7 +65,7 @@
     animation-direction: reverse;
 }
 .waves-wrapper li:nth-child(3) {
-    bottom: -7px;
+    bottom: -2px;
     opacity: .3;
     animation-duration: 10s;
 }
