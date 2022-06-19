@@ -20,7 +20,7 @@ main {
 }
 
 .about {
-    background: linear-gradient(#385691 50%, rgba(48, 160, 253, 0.45), rgba(105, 177, 252, 0.6));
+    background: linear-gradient(rgb(56, 86, 145) 50%, rgba(48, 160, 253, 0.45), rgba(105, 177, 252, 0.6));
 }
 
 /* text colors*/
