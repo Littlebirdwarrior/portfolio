@@ -101,8 +101,8 @@
     background:-webkit-gradient(linear, left top, left bottom, from(#f87fc0), color-stop(#e7277d), color-stop(#910b44), to(#64042f));
     background:-o-linear-gradient(#f87fc0, #e7277d, #910b44, #64042f);
     background:linear-gradient(#f87fc0, #e7277d, #910b44, #64042f);
-    -webkit-clip-path: polygon(43% 20%, 74% 28%, 98% 29%, 100% 100%, 0 100%, 0 29%, 19% 21%);
-    clip-path: polygon(43% 20%, 74% 28%, 98% 29%, 100% 100%, 0 100%, 0 29%, 19% 21%);
+    -webkit-clip-path: polygon(43% 20%, 74% 28%, 100% 30%, 100% 100%, 0 100%, 0 29%, 19% 21%);
+    clip-path: polygon(43% 20%, 74% 28%, 100% 30%, 100% 100%, 0 100%, 0 29%, 19% 21%);
 }
 
 /* card*/
