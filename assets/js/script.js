@@ -13,9 +13,6 @@ function createSquare(){
     square.style.left = Math.random() * innerWidth +'px';
 
     section.appendChild(square);
-
 }
-setInterval(createSquare , 2000)
-
-
-
+let interval = setInterval(createSquare , 500)
+setTimeout(() => clearInterval(interval), 500 * 20)

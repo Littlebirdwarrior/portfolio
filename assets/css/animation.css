@@ -131,7 +131,7 @@
 
 .stars_section {
     position: fixed;
-    top: 50%;
+    top: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -146,7 +146,7 @@ b{
     background: linear-gradient(#cdb6ea, #F1f1f1);
     -webkit-animation: stars 4s linear 400;
     animation: stars 4s linear 400;
-    z-index: -1;
+    z-index: -3;
 }
 
 .stars {
