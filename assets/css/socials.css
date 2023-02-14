@@ -116,6 +116,12 @@
     background: linear-gradient(#31303a, #1b1f23);
 }
 
+.wrapper .icon-container.codepen {
+    background: -webkit-gradient(linear, left top, left bottom, from(#967734), to(#d2ac03));
+    background: -o-linear-gradient(#967734, #d2ac03);
+    background: linear-gradient(#967734, #d2ac03);
+}
+
 .wrapper .icon-container.linkedin {
     background: -webkit-gradient(linear, left top, left bottom, from(#0077b5), to(#004b6e));
     background: -o-linear-gradient(#0077b5, #004b6e);
@@ -142,6 +148,10 @@
 
 .wrapper .icon-container.github:hover .icon{
     color: #1b1f23;
+}
+
+.wrapper .icon-container.codepen:hover .icon{
+    color: #d2ac03;
 }
 
 .wrapper .icon-container.linkedin:hover .icon{
