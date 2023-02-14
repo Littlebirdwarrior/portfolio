@@ -106,6 +106,7 @@ main {
     color: var(--primary) !important;
     background: var(--white) !important;
     border-color: transparent !important;
+    box-shadow: 2px 5px 50px rgba(225, 239, 239, 0.34);
 }
 
 .btn-link, .page-link {
@@ -115,7 +116,12 @@ main {
 }
 
 .btn:hover {
-    box-shadow: 2px 5px 50px rgba(225, 239, 239, 0.34);
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+    box-shadow: none;
 }
 
 .wrapper .icon-container:hover {

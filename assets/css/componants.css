@@ -143,12 +143,18 @@
     width: 100%;
     height: 130px;
     overflow: hidden;
+    text-overflow : ellipsis;
 }
 
 @media  (max-width: 1200px) {
     .card {
         width: 290px;
         margin: 0 auto;
+    }
+
+    .card .card-body p{
+        height: 125px;
+        font-size: .9rem;
     }
 
 }
