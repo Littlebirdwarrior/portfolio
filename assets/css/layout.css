@@ -24,6 +24,18 @@
 .header {
     z-index: 10;
 }
+
+@media (max-width: 560px) {
+ .header {
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     z-index: 100;
+ }
+  .footer {
+      display: none;
+  }
+}
 /*---------------------------------------------------------------*/
 /*-------------Hero section*/
 
@@ -155,7 +167,7 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 92vh;
+    top: 84vh;
     left: 48%;
     cursor: pointer;
     z-index: 10;
