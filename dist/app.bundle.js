@@ -1,1 +1,0 @@
-(()=>{var e=setInterval((function(){var e=document.querySelector(".stars_section"),t=document.createElement("b"),n=-10*Math.random();t.style.width=8+n+"px",t.style.height=8+n+"px",t.style.top=Math.random()*innerHeight+"px",t.style.left=Math.random()*innerWidth+"px",e.appendChild(t),console.log("stars created")}),500);setTimeout((function(){return clearInterval(e)}),1e4)})();
